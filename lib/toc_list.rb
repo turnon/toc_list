@@ -71,7 +71,7 @@ class TocList
   end
 
   def def_tmpl filename
-    sub_lib_dir = File.expand_path(__FILE__).sub(/\..*/, '')
+    sub_lib_dir = File.expand_path(__FILE__).sub(/\.rb$/, '')
     File.join sub_lib_dir, filename
   end
 
